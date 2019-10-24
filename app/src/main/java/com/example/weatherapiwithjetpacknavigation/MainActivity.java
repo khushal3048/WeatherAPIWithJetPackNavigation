@@ -67,12 +67,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         id = menuItem.getItemId();
         Bundle bundle = new Bundle();
         int geoId,bbcId;
-
+        String title;
         switch (id){
 
             default:
                 geoId = 3534;
                 bbcId = 6077243;
+                title = "Montreal";
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
@@ -80,13 +81,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.montreal:
                 geoId = 3534;
                 bbcId = 6077243;
+                title = "Montreal";
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
+                bundle.putString("title",title);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.ahemdabad:
                 geoId = 2295402;
                 bbcId = 1279233;
+                title = "Ahemadabad";
+                bundle.putString("title",title);
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
@@ -94,6 +99,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.surat:
                 geoId = 2295405;
                 bbcId = 1255364;
+                title = "Surat";
+                bundle.putString("title",title);
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
@@ -101,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.toronto:
                 geoId = 4118;
                 bbcId = 6167865;
+                title = "Toronto";
+                bundle.putString("title",title);
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
@@ -108,6 +117,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.bombay:
                 geoId = 12586539;
                 bbcId = 1275339;
+                title = "Mumbai";
+                bundle.putString("title",title);
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
@@ -115,6 +126,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.pune:
                 geoId = 2295412;
                 bbcId = 1259229;
+                title = "Pune";
+                bundle.putString("title",title);
                 bundle.putInt("geoId",geoId);
                 bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);

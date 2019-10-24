@@ -34,7 +34,7 @@ public class WebViewFragment extends Fragment {
         weather_web_view.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         weather_web_view.getSettings().setLoadsImagesAutomatically(true);
 
-        if(getArguments() == null) {
+        if(getArguments() != null) {
             System.out.println("URL " + getArguments().getString("url"));
             weather_web_view.loadUrl(getArguments().getString("url"));
         }else{

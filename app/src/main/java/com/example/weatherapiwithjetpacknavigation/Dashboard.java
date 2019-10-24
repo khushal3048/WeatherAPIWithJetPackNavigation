@@ -115,7 +115,7 @@ public class Dashboard extends Fragment {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.getString("url",url);
+                bundle.putString("url",url);
                 System.out.println("Response : " + url);
                 navController.navigate(R.id.webViewFragment,bundle);
             }
