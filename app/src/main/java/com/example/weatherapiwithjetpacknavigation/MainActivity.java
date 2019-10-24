@@ -66,43 +66,57 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         id = menuItem.getItemId();
         Bundle bundle = new Bundle();
-        int geoId;
+        int geoId,bbcId;
 
         switch (id){
 
             default:
                 geoId = 3534;
+                bbcId = 6077243;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.montreal:
                 geoId = 3534;
+                bbcId = 6077243;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.ahemdabad:
                 geoId = 2295402;
+                bbcId = 1279233;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.surat:
                 geoId = 2295405;
+                bbcId = 1255364;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.toronto:
                 geoId = 4118;
+                bbcId = 6167865;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.bombay:
                 geoId = 12586539;
+                bbcId = 1275339;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
             case R.id.pune:
                 geoId = 2295412;
+                bbcId = 1259229;
                 bundle.putInt("geoId",geoId);
+                bundle.putInt("bbcId",bbcId);
                 navController.navigate(R.id.dashboard,bundle);
                 break;
         }
