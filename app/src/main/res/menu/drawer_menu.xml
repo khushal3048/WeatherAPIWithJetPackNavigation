@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single" >
+
+        <item android:id="@+id/montreal"
+            android:title="Montreal" />
+        <item android:id="@+id/ahemdabad"
+            android:title="Ahemdabad" />
+        <item android:id="@+id/surat"
+            android:title="Surat" />
+        <item android:id="@+id/toronto"
+            android:title="Toronto" />
+        <item android:id="@+id/bombay"
+            android:title="Bombay" />
+        <item android:id="@+id/pune"
+            android:title="Pune" />
+
+    </group>
+</menu>
